@@ -51,6 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:autofillHints=""
+                    android:background="@color/colorPrimary"
                     android:ems="10"
                     android:hapticFeedbackEnabled="false"
                     android:inputType="textPersonName"
