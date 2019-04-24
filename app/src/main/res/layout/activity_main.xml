@@ -9,12 +9,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,23 +34,29 @@
                     android:id="@+id/artist_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
                     android:autofillHints=""
-                    android:background="@color/colorPrimary"
+                    android:background="@drawable/rounded_edittext"
                     android:ems="10"
+                    android:hint="@string/artist"
                     android:inputType="textPersonName"
-                    android:text="@string/artist" />
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray" />
 
                 <EditText
                     android:id="@+id/song_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:autofillHints=""
+                    android:background="@drawable/rounded_edittext"
                     android:ems="10"
-                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/song"
                     android:inputType="textPersonName"
-                    android:shadowColor="@color/colorPrimary"
-                    android:text="@string/song"
-                    android:textStyle="normal" />
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray" />
 
             </LinearLayout>
 
@@ -68,11 +68,19 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/lyrics_textview"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:text="@string/lyrics" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lyrics_textview"
+                android:layout_width="match_parent"
+                android:layout_height="583dp"
+                android:background="@android:color/darker_gray"
+                android:text="@string/lyrics"
+                android:textColor="#000000" />
+        </LinearLayout>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
