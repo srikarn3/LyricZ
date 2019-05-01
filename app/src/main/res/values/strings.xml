@@ -3,4 +3,5 @@
     <string name="lyrics">Lyrics:</string>
     <string name="artist">Artist</string>
     <string name="song">Song</string>
+    <string name="type_in_an_artist_and_their_string_song">Type in an artist and their song</string>
 </resources>
